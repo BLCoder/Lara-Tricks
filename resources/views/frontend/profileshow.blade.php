@@ -30,7 +30,7 @@
                         </tr>
                         <tr>
                             <th width="140">Last trick:</th>
-                            <td>6 months ago</td>
+                            <td>{{Carbon\Carbon::parse($user->posts()->orderby('created_at','desc')->first()->created_at)->diffForHumans()}}</td>
                         </tr>
                         </tbody></table>
                 </div>
