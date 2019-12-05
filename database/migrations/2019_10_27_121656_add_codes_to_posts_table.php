@@ -14,7 +14,7 @@ class AddCodesToPostsTable extends Migration
     public function up()
     {
         Schema::table('posts', function (Blueprint $table) {
-            $table->string('codes')->nullable();
+            $table->text('codes')->nullable();
         });
     }
 

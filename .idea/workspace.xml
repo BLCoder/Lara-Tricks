@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0f163c37-b784-4b35-a4a7-4b4258da5194" name="Default Changelist" comment="" />
+    <list default="true" id="0f163c37-b784-4b35-a4a7-4b4258da5194" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_27_121656_add_codes_to_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_27_121656_add_codes_to_posts_table.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +31,9 @@
     </option>
     <expand />
     <select />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -119,7 +126,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1SjlK9vegEcynERIZlArwakoz6a" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -202,11 +211,22 @@
       <workItem from="1575301716244" duration="789000" />
       <workItem from="1575400846535" duration="741000" />
       <workItem from="1575476221716" duration="6690000" />
-      <workItem from="1575562465311" duration="2772000" />
+      <workItem from="1575562465311" duration="4784000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
