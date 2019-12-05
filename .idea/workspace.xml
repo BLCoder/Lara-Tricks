@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0f163c37-b784-4b35-a4a7-4b4258da5194" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_27_121656_add_codes_to_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_27_121656_add_codes_to_posts_table.php" afterDir="false" />
-    </list>
+    <list default="true" id="0f163c37-b784-4b35-a4a7-4b4258da5194" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +207,7 @@
       <workItem from="1575301716244" duration="789000" />
       <workItem from="1575400846535" duration="741000" />
       <workItem from="1575476221716" duration="6690000" />
-      <workItem from="1575562465311" duration="4784000" />
+      <workItem from="1575562465311" duration="5200000" />
     </task>
     <servers />
   </component>
