@@ -60,7 +60,7 @@
                                 <select id="categories" class="form-control" name="categories[]" multiple="multiple" placeholder="Choose Categories for this trick">
                                     @foreach($categories as $category)
                                         <option value="{{$category->id}}" {{($post->categories->find($category->id)) ? "selected" : ''}}>
-                                            {{$tag->name}}
+                                            {{$category->name}}
 
                                         </option>
                                     @endforeach
