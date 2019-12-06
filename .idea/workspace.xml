@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0f163c37-b784-4b35-a4a7-4b4258da5194" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TricksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TricksController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/unsolve_trick.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/unsolve_trick.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -210,7 +212,7 @@
       <workItem from="1575400846535" duration="741000" />
       <workItem from="1575476221716" duration="6690000" />
       <workItem from="1575562465311" duration="6959000" />
-      <workItem from="1575650986896" duration="1963000" />
+      <workItem from="1575650986896" duration="2322000" />
     </task>
     <servers />
   </component>

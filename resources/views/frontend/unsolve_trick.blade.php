@@ -10,11 +10,6 @@
 @section('content')
 
 
-    <form method="post" action="{{url('add/cat')}}">
-        @csrf
-        <input type="text" name="tt">
-        <button type="submit">Add</button>
-    </form>
 
 
 
