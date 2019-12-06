@@ -68,8 +68,8 @@
                             </a>
                         </li>
                     @endif
-                    <li class="{{Route::currentRouteName()=='unsolve.tricks' ? 'active' : ''}}"><a href="{{route('unsolve.tricks')}}" >UNSOLVE TRICK</a></li>
-
+                    {{--<li class="{{Route::currentRouteName()=='unsolve.tricks' ? 'active' : ''}}"><a href="{{route('unsolve.tricks')}}" >UNSOLVE TRICK</a></li>
+--}}
                 </ul>
 
                 <div class="navbar-right hidden-xs">
