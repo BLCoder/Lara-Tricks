@@ -12,6 +12,7 @@
                 <div class="content-box">
                     <h1 class="page-title">
                         Update Trick
+                        <a href="{{url('tricks/'.$post->slug)}}" style="color: #ffaa30;font-size: 24px;float: right;font-weight: bold;">Go To Post</a>
                     </h1>
 
 
