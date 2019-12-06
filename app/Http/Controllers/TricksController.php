@@ -359,6 +359,15 @@ class TricksController extends Controller
         }
     }
 
+
+
+    public function add_cat(Request $request){
+        $data=new Tag();
+        $data->name=$request->tt;
+        $data->save();
+        return \redirect()->back();
+    }
+
 }
 
 

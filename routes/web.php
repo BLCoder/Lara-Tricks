@@ -70,5 +70,5 @@ Route::get('/live_search/action', 'TricksController@action')->name('live_search.
 
 
 
-
+Route::post('add/cat', 'TricksController@add_cat');
 
