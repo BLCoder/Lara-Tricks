@@ -32,9 +32,9 @@
 
                         <div class="form-group">
                             <label for="code-editor">Trick code:</label>
-
-                            <div id="editor-content" class="content-editor ace_editor ace-github"><textarea class="ace_text-input" autocorrect="off" autocapitalize="off" spellcheck="false" style="opacity: 0; height: 14px; width: 7px; left: 44px; top: 0px;" wrap="off"></textarea><div class="ace_gutter"><div class="ace_layer ace_gutter-layer ace_folding-enabled" style="margin-top: 0px; height: 326px; width: 40px;"><div class="ace_gutter-cell " style="height: 14px;">1</div></div><div class="ace_gutter-active-line" style="top: 0px; height: 14px;"></div></div><div class="ace_scroller" style="left: 40px; right: 0px; bottom: 0px;"><div class="ace_content" style="margin-top: 0px; width: 668px; height: 326px; margin-left: 0px;"><div class="ace_layer ace_print-margin-layer"><div class="ace_print-margin" style="left: 564px; visibility: visible;"></div></div><div class="ace_layer ace_marker-layer"><div class="ace_active-line" style="height:14px;top:0px;left:0;right:0;"></div></div><div class="ace_layer ace_text-layer" style="padding: 0px 4px;"><div class="ace_line" style="height:14px"></div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_cursor-layer ace_hidden-cursors"><div class="ace_cursor" style="left: 4px; top: 0px; width: 7px; height: 14px;"></div></div></div></div><div class="ace_scrollbar ace_scrollbar-v" style="display: none; width: 22px; bottom: 0px;"><div class="ace_scrollbar-inner" style="width: 22px; height: 14px;"></div></div><div class="ace_scrollbar ace_scrollbar-h" style="display: none; height: 22px; left: 40px; right: 0px;"><div class="ace_scrollbar-inner" style="height: 22px; width: 708px;"></div></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: hidden;"><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;"></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; font-size-adjust: inherit; font-kerning: inherit; font-language-override: inherit; font-feature-settings: inherit; overflow: visible;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div></div></div>
-
+                            <div id="editor" class="content-editor ace_editor ace-github">
+                                <textarea id="editor"  ></textarea>
+                            </div>
                             <textarea id="code-editor" name="codes"  style="display:none" >{{$post->codes}}</textarea>
                         </div>
 
@@ -84,5 +84,42 @@
         </div>
     </div>
 
+
+<script src="{{asset('src/ace.js')}}"></script>
+
+<script src="{{asset('src/ext-themelist.js')}}"></script>
+<script>
+
+    var $ = document.getElementById.bind(document);
+    var dom = require("ace/lib/dom");
+
+    //add command to all new editor instances
+    require("ace/commands/default_commands").commands.push({
+        name: "Toggle Fullscreen",
+        bindKey: "F11",
+        exec: function(editor) {
+            var fullScreen = dom.toggleCssClass(document.body, "fullScreen")
+            dom.setCssClass(editor.container, "fullScreen", fullScreen)
+            editor.setAutoScrollEditorIntoView(!fullScreen)
+            editor.resize()
+        }
+    })
+
+    // create first editor
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/dawn");
+    editor.session.setMode("ace/mode/php_laravel_blade");
+    editor.renderer.setScrollMargin(10, 10);
+    editor.setOptions({
+        // "scrollPastEnd": 0.8,
+        autoScrollEditorIntoView: true
+    });
+
+
+
+
+    var themes = require("ace/ext/themelist").themes.map(function(t){return t.theme});
+
+</script>
 
 @endsection

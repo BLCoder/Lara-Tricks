@@ -32,8 +32,17 @@
                     </div>
 
                     <p> {{$post->body}} </p>
+    
 
-                    <pre><code class="php">{{{ $post->codes }}}</code></pre>
+                    <pre class="code" ace-mode="ace/mode/php_laravel_blade" ace-theme="ace/theme/chrome" ace-gutter="true">
+                        {!! $post->codes !!}
+
+                    </pre>
+
+                    
+
+
+
 
                 </div>
             </div>
@@ -130,5 +139,28 @@
         let urlLike='{{route('like')}}';
     </script>
 
+
+<script src="{{asset('src/ace.js')}}"></script>
+<script src="{{asset('src/ext-static_highlight.js')}}"></script>
+<script src="{{asset('src/show_own_source.js')}}"></script>
+<script>
+    var highlight = ace.require("ace/ext/static_highlight")
+    var dom = ace.require("ace/lib/dom")
+    function qsa(sel) {
+        return Array.apply(null, document.querySelectorAll(sel));
+    }
+
+    qsa(".code").forEach(function (codeEl) {
+        highlight(codeEl, {
+            mode: codeEl.getAttribute("ace-mode"),
+            theme: codeEl.getAttribute("ace-theme"),
+            startLineNumber: 1,
+            showGutter: codeEl.getAttribute("ace-gutter"),
+            trim: true
+        }, function (highlighted) {
+            
+        });
+    });
+</script>
 
 @endsection

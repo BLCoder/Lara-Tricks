@@ -17,21 +17,63 @@
 
 
 
+  
     <style type="text/css">
-        #editor-content {
-            position: relative;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            height: 300px;
-            -webkit-border-radius: 4px;
-            -moz-border-radius: 4px;
-            border-radius: 4px;
-            border: 1px solid #cccccc;
+        .code {
+  
+            white-space: pre-wrap;
+            border: solid lightgrey 1px
         }
-
     </style>
+    <style type="text/css" media="screen">
+    .ace_editor {
+        position: relative !important;
+        border: 1px solid lightgray;
+        margin: auto;
+        height: 300px;
+  
+    }
+
+    .ace_editor.fullScreen {
+        height: auto;
+        width: auto;
+        border: 0;
+        margin: 0;
+        position: fixed !important;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+    }
+
+    .fullScreen {
+        overflow: hidden
+    }
+
+    .scrollmargin {
+        height: 500px;
+        text-align: center;
+    }
+
+    .large-button {
+        color: lightblue;
+        cursor: pointer;
+        font: 30px arial;
+        padding: 20px;
+        text-align: center;
+        border: medium solid transparent;
+        display: inline-block;
+    }
+    .large-button:hover {
+        border: medium solid lightgray;
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: 0 0 12px 0 lightblue;
+    }
+    body {
+        transform: translateZ(0);
+    }
+  </style>
 
 
 </head>
@@ -68,7 +110,7 @@
                             </a>
                         </li>
                     @endif
-                    <li class="{{Route::currentRouteName()=='unsolve.tricks' ? 'active' : ''}}"><a href="{{route('unsolve.tricks')}}" >UNSOLVE TRICK</a></li>
+                    <li class="{{Route::currentRouteName()=='unsolve.tricks' ? 'active' : ''}}"><a href="{{route('unsolve.tricks')}}" >UNSOLVE TRICKS</a></li>
 
                 </ul>
 
@@ -188,6 +230,8 @@
         });
     });
 </script>
+
+
 
 
 </body>
