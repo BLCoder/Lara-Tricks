@@ -34,8 +34,8 @@
                     <p> {{$post->body}} </p>
     
 
-                    <pre class="code" ace-mode="ace/mode/php_laravel_blade" ace-theme="ace/theme/chrome" ace-gutter="true">
-                        {!! $post->codes !!}
+                    <pre class="code" ace-mode="ace/mode/javascript" ace-theme="ace/theme/chrome" ace-gutter="true">
+                        {{{ $post->codes }}}
 
                     </pre>
 

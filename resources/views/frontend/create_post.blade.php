@@ -107,7 +107,7 @@
     // create first editor
     var editor = ace.edit("editor");
     editor.setTheme("ace/theme/dawn");
-    editor.session.setMode("ace/mode/php_laravel_blade");
+    editor.session.setMode("ace/mode/javascript");
     editor.renderer.setScrollMargin(10, 10);
     editor.setOptions({
         // "scrollPastEnd": 0.8,
